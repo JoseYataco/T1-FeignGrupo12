@@ -18,7 +18,8 @@ public class FakeUserController {
         this.fakeUserService = fakeUserService;
     }
 
-    @GetMapping("/filtrados")
+    //http://localhost:8080/api/fake-store/usuarios/solicitados
+    @GetMapping("/solicitados")
     public List<FakeUserDto> obtenerUsuariosFiltrados() {
         return fakeUserService.obtenerUsuariosSolicitados();
     }

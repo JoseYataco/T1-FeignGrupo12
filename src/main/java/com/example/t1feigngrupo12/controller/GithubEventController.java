@@ -18,8 +18,8 @@ public class GithubEventController {
     public GithubEventController(GithubEventService githubEventService) {
         this.githubEventService = githubEventService;
     }
-
-    @GetMapping("/filtrados")
+    //http://localhost:8080/api/github/events/solicitado
+    @GetMapping("/solicitado")
     public List<GithubEventDto> obtenerEventosFiltrados() {
         return githubEventService.obtenerEventosSolicitados();
     }

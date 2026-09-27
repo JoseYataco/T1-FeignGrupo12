@@ -19,7 +19,8 @@ public class AlbumController {
         this.albumService = albumService;
     }
 
-    @GetMapping("/filtrados")
+    //http://localhost:8080/api/albums/solicitados
+    @GetMapping("/solicitados")
     public List<AlbumsPlaceHolder> obtenerAlbumsFiltrados() {
         return albumService.obtenerAlbumsSolicitados();
     }
